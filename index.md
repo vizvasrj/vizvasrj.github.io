@@ -1,6 +1,6 @@
 # Saurav Raj
 
-Hazaribagh, Jharkhand, India | saurav.raj.ash@gmail.com | https://github.com/vizvasrj | +91 9006912014
+Hazaribagh, Jharkhand, India | [saurav.raj.ash@gmail.com](mailto:saurav.raj.ash@gmail.com) | [https://github.com/vizvasrj](https://github.com/vizvasrj) | +91 9006912014
 
 **Known Languages:** Hindi | English | French
 
