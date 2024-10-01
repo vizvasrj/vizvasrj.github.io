@@ -48,6 +48,7 @@ I am an Adaptive Learner and Internet Savvy Problem-Solver who showcases remarka
 
 ### Cloud Computing
 
+* [IBM Full Stack Software Developer](https://www.coursera.org/account/accomplishments/specialization/certificate/JZNBKG1GLSNL)
 * [Introduction to Containers w/ Docker, Kubernetes & OpenShift (2024) 🔗](https://www.coursera.org/verify/TLCJ7X8BM6Q9)
 * [Architecting Solutions on AWS (2023) 🔗](https://coursera.org/verify/73GAVT3UET7S)
 * [Site Reliability Engineering: Measuring and Managing Reliability (2023) 🔗](https://coursera.org/verify/CX9KN9ZS7YBM)
