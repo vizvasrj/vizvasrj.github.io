@@ -6,7 +6,7 @@ Hazaribagh, Jharkhand, India | saurav.raj.ash@gmail.com | https://github.com/viz
 
 ## Objective
 
-Highly experienced with Linux OS (7+ years). 2.5+ years of Experience in building multi-threaded applications. Proficient in designing, implementing, and managing cutting-edge deployment automation and cloud resources. Continuously seeking to learn new tools and techniques. Skilled in writing microservice architectures and REST APIs.
+Highly experienced 2.5+ years of Experience in building multi-threaded applications. Proficient in designing, implementing, and managing cutting-edge deployment automation and cloud resources. Continuously seeking to learn new tools and techniques. Skilled in writing microservice architectures and REST APIs.
 
 ## Education
 
