@@ -48,14 +48,14 @@ I am an Adaptive Learner and Internet Savvy Problem-Solver who showcases remarka
 
 ### Cloud Computing
 
-* Introduction to Containers w/ Docker, Kubernetes & OpenShift (2024) 🔗
-* Architecting Solutions on AWS (2023) 🔗
-* Site Reliability Engineering: Measuring and Managing Reliability (2023) 🔗
-* Architecting with Google Kubernetes Engine: Workloads (2022) 🔗
-* Architecting with Google Kubernetes Engine: Foundations (2022) 🔗
-* Google Cloud Fundamentals: Core Infrastructure (2022) 🔗
-* Continuous Delivery with Jenkins in Kubernetes Engine (2023) 🔗
-* Migrating a Monolithic Website to Microservices on Google Kubernetes Engine (2023) 🔗
+* [Introduction to Containers w/ Docker, Kubernetes & OpenShift (2024) 🔗](https://www.coursera.org/verify/TLCJ7X8BM6Q9)
+* [Architecting Solutions on AWS (2023) 🔗](https://coursera.org/verify/73GAVT3UET7S)
+* [Site Reliability Engineering: Measuring and Managing Reliability (2023) 🔗](https://coursera.org/verify/CX9KN9ZS7YBM)
+* [Architecting with Google Kubernetes Engine: Workloads (2022) 🔗](https://www.coursera.org/verify/TRHWXSRJWSU4)
+* [Architecting with Google Kubernetes Engine: Foundations (2022) 🔗](https://www.coursera.org/verify/ZUD8HMP8DZEF)
+* [Google Cloud Fundamentals: Core Infrastructure (2022) 🔗](https://www.coursera.org/verify/4A5RNQ5ZBTW6)
+* [Continuous Delivery with Jenkins in Kubernetes Engine (2023) 🔗](https://www.coursera.org/verify/JETZNJPWZSBX)
+* [Migrating a Monolithic Website to Microservices on Google Kubernetes Engine (2023) 🔗](https://coursera.org/verify/WH4RK3RWLAVC)
 
 ### Cyber Security
 
