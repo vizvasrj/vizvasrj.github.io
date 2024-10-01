@@ -1,0 +1,90 @@
+Here’s a more detailed and organized project description for the **Guestbook Application** using Docker and Kubernetes:
+
+---
+
+**Project Overview:**
+The Guestbook application is a simple web application that allows users to submit text through a web front-end. This application will be built, deployed, and managed using Docker and Kubernetes. The main components include:
+
+1. **Web Front-End**: A text input where users can submit messages.
+2. **Kubernetes Deployments and Pods**: Containers for hosting and managing the application.
+3. **Horizontal Pod Scaling**: Automatically scale the number of Pods based on the load.
+4. **Rolling Updates and Rollbacks**: Updating the application while ensuring zero downtime and supporting rollback to previous versions.
+
+---
+
+### Step-by-Step Implementation:
+
+#### 1. **Environment Setup and Tools Verification**
+   - Verify that Docker, Kubernetes, and command-line tools are installed and configured in your environment.
+
+#### 2. **Build the Guestbook App**
+   - Navigate to the `v1/guestbook` directory:
+     ```bash
+     cd v1/guestbook
+     ```
+
+   - Export your namespace for future use:
+     ```bash
+     export MY_NAMESPACE=sn-labs-$USERNAME
+     ```
+   - Build and push the Docker image:
+     ```bash
+     docker build -t us.icr.io/$MY_NAMESPACE/guestbook:v1 .
+     docker push us.icr.io/$MY_NAMESPACE/guestbook:v1
+     ```
+
+   - Verify that the image has been pushed successfully:
+     ```bash
+     ibmcloud cr images
+     ```
+
+#### 3. **Deploy the Guestbook Application**
+   - Edit the `deployment.yml` file in the `v1/guestbook` directory. The deployment configuration defines the number of replicas and the resources allocated (e.g., CPU). Replace `<your sn labs namespace>` with your namespace.
+   - Deploy the application using:
+     ```bash
+     kubectl apply -f deployment.yml
+     ```
+   - Forward the port to access the application:
+     ```bash
+     kubectl port-forward deployment.apps/guestbook 3000:3000
+     ```
+
+   - Launch your application and test it by entering text into the Guestbook.
+
+#### 4. **Horizontal Pod Autoscaling (HPA)**
+   - Apply autoscaling to your deployment using:
+     ```bash
+     kubectl autoscale deployment guestbook --cpu-percent=50 --min=1 --max=5
+     ```
+   - Check the status of the HPA:
+     ```bash
+     kubectl get hpa guestbook
+     ```
+   - Generate load on the app to observe autoscaling:
+     ```bash
+     kubectl run -i --tty load-generator --rm --image=busybox -- /bin/sh -c "while sleep 0.01; do wget -q -O- <your app URL>; done"
+     ```
+
+   - Watch the scaling process as the number of replicas increases based on load:
+     ```bash
+     kubectl get hpa guestbook --watch
+     ```
+
+#### 5. **Rolling Updates and Rollbacks**
+   - Update the app content (e.g., change the title and header in `index.html`), then build and push the updated image:
+     ```bash
+     docker build -t us.icr.io/$MY_NAMESPACE/guestbook:v2 .
+     docker push us.icr.io/$MY_NAMESPACE/guestbook:v2
+     ```
+   - Update the `deployment.yml` to reflect the new image version (`v2`) and apply the update:
+     ```bash
+     kubectl apply -f deployment.yml
+     ```
+   - Check the rollout status:
+     ```bash
+     kubectl rollout status deployment/guestbook
+     ```
+   - Roll back to the previous version if needed:
+     ```bash
+     kubectl rollout undo deployment/guestbook --to-revision=1
+     ```
